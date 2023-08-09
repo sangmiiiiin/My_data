@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mime": "^3.0.0",
+    "mysql2": "^3.5.2",
+    "node-static": "^0.7.11",
+    "nodemon": "^3.0.1",
+    "tracer": "^1.1.6"
+  }
+}

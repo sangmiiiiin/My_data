@@ -1,0 +1,10 @@
+[Wed Aug 09 2023 13:13:55 GMT+0900 (대한민국 표준시)] 200 /index.html
+[Wed Aug 09 2023 13:13:55 GMT+0900 (대한민국 표준시)] 200 /img/favicon.ico
+[Wed Aug 09 2023 13:14:11 GMT+0900 (대한민국 표준시)] 404 /chat.html?username=%EB%9A%B1%EB%9A%B1%EB%AF%BC
+[Wed Aug 09 2023 13:15:50 GMT+0900 (대한민국 표준시)] 404 /chat.html?username=Kim
+[Wed Aug 09 2023 13:15:56 GMT+0900 (대한민국 표준시)] 404 /chat.html?username=kim
+[Wed Aug 09 2023 13:19:36 GMT+0900 (대한민국 표준시)] 200 /chat.html?username=kim
+[Wed Aug 09 2023 13:19:45 GMT+0900 (대한민국 표준시)] 200 /chat.html?username=%EC%97%A5%3F
+[Wed Aug 09 2023 13:19:49 GMT+0900 (대한민국 표준시)] 200 /chat.html?username=%E3%85%8B%E3%85%8B
+[Wed Aug 09 2023 13:19:58 GMT+0900 (대한민국 표준시)] 200 /chat.html?username=kim
+[Wed Aug 09 2023 13:20:13 GMT+0900 (대한민국 표준시)] 200 /chat.html?username=sddsasad

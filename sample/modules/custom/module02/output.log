@@ -1,0 +1,3 @@
+<log> 작업 시작.{os.EOL}<error> 에러 발생...{os.EOL}<log> 작업 종료.{os.EOL}<log> 작업 시작.
+<error> 에러 발생...
+<log> 작업 종료.
