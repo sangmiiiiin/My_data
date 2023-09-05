@@ -1,1 +1,11 @@
 workspace-ins/
+
+# node_modules 디렉토리를 무시합니다.
+node_modules/
+
+# package-lock.json 파일을 무시합니다.
+package-lock.json
+
+# package.json 파일을 무시하지 않지만,
+# 프로젝트의 종속성을 포함하지 않습니다.
+package.json
