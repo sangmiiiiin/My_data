@@ -1,0 +1,9 @@
+const http = require('http');
+const app = require('../app');
+
+// requestListener 등록
+const httpServer = http.createServer(app);
+
+httpServer.listen(80, function(){
+  console.log('HTTP 서버 구동.');
+});
