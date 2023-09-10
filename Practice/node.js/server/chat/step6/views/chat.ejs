@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>채팅</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="shortcut icon" href="/img/favicon.ico">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="shortcut icon" href="/img/favicon.ico">
+  <title>채팅</title>
 </head>
 <body class="well">
-	<h1>채팅창</h1>
-	<div class="form-group">	  		
-		<textarea id="panel" rows="20" cols="70"  class="form-control" disabled></textarea>
-	</div>
+  <h1>채팅창</h1>
+  <div class="form-group">
+    <textarea id="panel" rows="20" cols="70" class="form-control" disabled></textarea>
+  </div>
 
   <% if(nickname){ %>
     <div class="form-inline">
-      <output><%= nickname %></output>
+      <output><% nickname %></output>
       <input class="form-control" type="text" size="80" autofocus>
-      <button type="button" class="btn btn-success">메세지 전송</button>
+      <button type="button" class="btn btn-success">메시지 전송</button>
       <a href="/logout"><button class="btn btn-danger">로그아웃</button></a>
     </div>
   <% }else{ %>
@@ -25,9 +25,9 @@
 
   <script src="/socket.io/socket.io.js"></script>
   <script>
-    // 1. 웹소켓 서버 접속
+    // 1. 웹 소켓 서버 접속
     const socket = io(/*'ws://localhost:80'*/);
-    // 2. 서버가 보낸 메세지 출력
+    // 2. 서버가 보낸 메시지 출력
     const msgOut = document.getElementById('panel');
     socket.on('toclient', function(msg){
       msgOut.value += msg + '\n';
@@ -35,8 +35,8 @@
     });
     // 3. 로그인
     socket.emit('login', '<%= nickname %>');
-    // 4. 서버에 메세지 전송
-    const msg = document.querySelector('input');
+    // 4. 서버에 메시지 전송
+    const msg = document.querySelector('input');;
     function send(){
       socket.emit('chat', msg.value);
       msg.value = '';
