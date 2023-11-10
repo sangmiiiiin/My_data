@@ -1,0 +1,18 @@
+<!-- 반환문은 함수 몸체 내부에서만 사용할 수 있다. 전역에서 반환문을 사용하면 문법 에러(SyntaxError: Illegal return statement)가 발생. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        return; // SyntaxError: Illegal return statement
+    </script>
+</body>
+</html>
+
+<!-- Node.js 는 모듈 시스템에 의해 파일별로 독립적인 스코프를 갖는다 따라서 Node.js 환경에서 파일의 가장 바깥 영역에 반환문을 사용해도 에러 발생 X -->
+<!-- 브라우저로 확인해보니 신텍스 에러 발생 확인함 -->
