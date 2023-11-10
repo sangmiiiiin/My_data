@@ -9,3 +9,9 @@ obj[key] = 'World!';
 // ES6: 계산된 프로퍼티 이름
 
 console.log(obj); // {hello: "World!"}
+
+var obj = {};
+var key = 'Hello';
+obj[key] = 'World!';
+
+console.log(obj);
